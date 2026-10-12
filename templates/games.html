@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Games | CodeBuddy</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+            💻 CodeBuddy
+        </a>
+
+        <div class="navbar-links">
+            <a href="/" class="nav-link-custom">Home</a>
+            <a href="/learn" class="nav-link-custom">Learn</a>
+            <a href="/games" class="nav-link-custom">Games</a>
+        </div>
+
+    </div>
+</nav>    
+
+        
+    <!-- GAMES HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                🎮 Learn Through Games
+            </div>
+
+            <h1>
+                Let's Play & Learn!
+            </h1>
+
+            <p>
+                Have fun while learning the basics of coding.
+            </p>
+
+            <p>
+                Think 🧠 → Solve 🧩 → Learn 🚀
+            </p>
+
+        </div>
+
+    </section>
+    <!-- =========================
+     CODING GAME
+========================= -->
+
+<section class="games-section">
+
+    <div class="section-title">
+        <h2>🧠 Guess the Output</h2>
+        <p>Can you predict what the computer will display?</p>
+    </div>
+
+    <div class="game-card">
+
+        <h3>💻 What will this code print?</h3>
+
+        <div class="code-box">
+<pre>name = "Alex"
+print(name)</pre>
+        </div>
+
+        <p class="game-question">
+            Choose the correct answer:
+        </p>
+
+        <div class="answer-buttons">
+
+            <button onclick="checkAnswer('A')">
+                A. Hello
+            </button>
+
+            <button onclick="checkAnswer('B')">
+                B. Alex
+            </button>
+
+            <button onclick="checkAnswer('C')">
+                C. name
+            </button>
+
+            <button onclick="checkAnswer('D')">
+                D. Error
+            </button>
+
+        </div>
+
+        <div id="game-result"></div>
+
+        <button class="next-button" onclick="nextQuestion()">
+            Next Question 🚀
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- GAME SECTION -->
+
+    <section class="info-section">
+
+        <div class="section-title">
+
+            <h2>
+                🎮 Choose a Coding Game
+            </h2>
+
+            <p>
+                Learning coding becomes easier when you play!
+            </p>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <!-- GAME 1 -->
+
+            <div class="info-card">
+
+                <div class="info-card-icon">
+                    🧩
+                </div>
+
+                <h3>
+                    Arrange the Code
+                </h3>
+
+                <p>
+                    Put the instructions in the correct order
+                    to solve a simple problem.
+                </p>
+
+                <button
+    id="arrangeGameButton"
+    class="game-button"
+    onclick="startArrangeGame()">
+
+    ▶ Play Game
+
+</button>
+
+<div id="gameArea">
+</div>
+
+</div>
+
+<!-- GAME 2 -->
+
+            <!-- GAME 2 -->
+
+            <div class="info-card">
+
+                <div class="info-card-icon">
+                    🐞
+                </div>
+
+                <h3>
+                    Find the Bug
+                </h3>
+
+                <p>
+                    Look at the code carefully and find
+                    the mistake.
+                </p>
+
+                <button
+                    class="game-button"
+                    onclick="startBugGame()">
+
+                    ▶ Find the Bug
+
+                </button>
+                <div id="bugGameArea">
+
+            </div>
+            </div>
+
+
+            <!-- GAME 3 -->
+
+            <div class="info-card">
+
+                <div class="info-card-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Coding Challenge
+                </h3>
+
+                <p>
+                    Answer simple coding questions and
+                    test what you have learned.
+                </p>
+
+                <button
+                    class="game-button"
+                    onclick="startChallenge()">
+
+                    ▶ Start Challenge
+
+                </button>
+                <div id="challengeGameArea">
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GAME AREA -->
+
+    <!-- GAME AREA -->
+<section class="create-section">
+
+    <div class="create-card">
+
+        <h2 id="gameTitle">
+            🚀 Ready to Play?
+        </h2>
+
+        <p id="gameQuestion">
+            Choose a game above to start your coding adventure!
+        </p>
+
+        <div id="gameArea">
+        </div>
+
+    </div>
+
+</section>                                  
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            💻 CodeBuddy
+        </h3>
+
+        <p>
+            Coding Awareness Program for School Students
+        </p>
+
+        <p class="footer-small">
+            Learn • Play • Create 🚀
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CodeBuddy | Coding Awareness Program</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CodeBuddy CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+            💻 CodeBuddy
+        </a>
+
+        <div class="navbar-links">
+            <a href="/" class="nav-link-custom">Home</a>
+            <a href="/learn" class="nav-link-custom">Learn</a>
+            <a href="/games" class="nav-link-custom">Games</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        🎓 Coding Awareness Program
+                    </div>
+
+                    <h1>
+                        Welcome to the
+                        <span>World of Coding!</span> 🚀
+                    </h1>
+
+                    <p>
+                        Discover what coding is, understand how
+                        technology works, play fun coding games,
+                        and take your first step toward becoming
+                        a programmer.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#what-is-coding"
+                           class="btn btn-primary btn-lg">
+                            🚀 Start Learning
+                        </a>
+
+                        <a href="#activities"
+                           class="btn btn-outline-dark btn-lg">
+                            🎮 Play & Learn
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="hero-visual">
+
+                    <div class="code-window">
+
+                        <div class="code-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-body">
+
+                            <p>
+                                <span class="code-blue">print</span>
+                                (<span class="code-green">
+                                "Hello, World!"
+                                </span>)
+                            </p>
+
+                            <p>
+                                <span class="code-purple">
+                                    student
+                                </span>
+                                =
+                                <span class="code-orange">
+                                    "Future Programmer"
+                                </span>
+                            </p>
+
+                            <p>
+                                🚀
+                                <span class="code-green">
+                                    Let's Code!
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHAT IS CODING -->
+<section id="what-is-coding" class="info-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-icon">🤔</div>
+
+            <h2>What is Coding?</h2>
+
+            <p>
+                Coding is simply giving instructions to a computer.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-4">
+
+                <div class="info-card">
+
+                    <div class="icon">🧠</div>
+
+                    <h3>Think</h3>
+
+                    <p>
+                        First understand the problem and think
+                        about how you can solve it.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="info-card">
+
+                    <div class="icon">💻</div>
+
+                    <h3>Code</h3>
+
+                    <p>
+                        Write instructions using a programming
+                        language that computers can understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="info-card">
+
+                    <div class="icon">🚀</div>
+
+                    <h3>Create</h3>
+
+                    <p>
+                        Your instructions can become games,
+                        websites, apps, robots and much more.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CODING EVERYWHERE -->
+<section class="around-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-icon">🌎</div>
+
+            <h2>Coding is Everywhere!</h2>
+
+            <p>
+                You use technology every day.
+                Coding helps make it work.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="around-card">
+                    <div>📱</div>
+                    <h5>Mobile Apps</h5>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="around-card">
+                    <div>🎮</div>
+                    <h5>Games</h5>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="around-card">
+                    <div>🤖</div>
+                    <h5>Robots</h5>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="around-card">
+                    <div>🌐</div>
+                    <h5>Websites</h5>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="around-card">
+                    <div>🚗</div>
+                    <h5>Smart Cars</h5>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="around-card">
+                    <div>🏠</div>
+                    <h5>Smart Homes</h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHAT CAN YOU CREATE -->
+<section class="create-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-icon">🚀</div>
+
+            <h2>What Can You Create?</h2>
+
+            <p>
+                With coding, your imagination can become reality.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="create-card">
+                    <div class="create-icon">🌐</div>
+                    <h4>Websites</h4>
+                    <p>
+                        Build your own websites and web pages.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+                <div class="create-card">
+                    <div class="create-icon">🎮</div>
+                    <h4>Games</h4>
+                    <p>
+                        Create fun games that people can play.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+                <div class="create-card">
+                    <div class="create-icon">🤖</div>
+                    <h4>Robots</h4>
+                    <p>
+                        Give robots instructions and make them move.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+                <div class="create-card">
+                    <div class="create-icon">📱</div>
+                    <h4>Apps</h4>
+                    <p>
+                        Build useful applications for people.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CODING JOURNEY -->
+<section id="activities" class="explore">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-icon">🎯</div>
+
+            <h2>Choose Your Coding Journey</h2>
+
+            <p>
+                Learn, play and test what you know.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-4">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">📚</div>
+
+                    <h3>Learn</h3>
+
+                    <p>
+                        Understand coding concepts through
+                        simple explanations and examples.
+                    </p>
+
+                    <a href="/learn"
+                       class="btn btn-primary">
+                        Start Learning
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">🎮</div>
+
+                    <h3>Play</h3>
+
+                    <p>
+                        Learn programming ideas by playing
+                        interactive coding games.
+                    </p>
+
+                    <a href="/games"
+                       class="btn btn-success">
+                        Play Games
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-icon">🚀</div>
+
+            <h2>Ready to Become a CodeBuddy?</h2>
+
+            <p>
+                Start your coding journey today.
+                No experience required!
+            </p>
+
+            <a href="#what-is-coding"
+               class="btn btn-light btn-lg">
+                Let's Start Coding! 🚀
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container">
+
+        <h5>💻 CodeBuddy</h5>
+
+        <p>
+            Coding Awareness Program for School Students
+        </p>
+
+        <p class="footer-small">
+            © 2026 CodeBuddy. Created as a TYCS Project.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
